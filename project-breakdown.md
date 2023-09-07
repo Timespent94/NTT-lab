@@ -2,8 +2,8 @@
 STEPS:
 1. starting from zero.
 --1.starting with WAN-Cloud and the WAN-Switch already established and configured in GNS3.
---2.We added a FortiGate firewall, two switchs and a Windows 10 workstation to the Network.
---3.We then provided connections for the network.
+..2.We added a FortiGate firewall, two switchs and a Windows 10 workstation to the Network.
+..3.We then provided connections for the network.
 3. Set up a virtual LAN interface utilizing PuTTY. The CLI inputs were as follows.
    a. conf sys int
    b. edit port2
