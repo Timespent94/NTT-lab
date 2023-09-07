@@ -5,8 +5,8 @@ STEPS:
   b. We added a FortiGate firewall, two switchs and a Windows 10 workstation to the Network.
   c. We then provided connections for the network.
 2. Set up a virtual LAN interface utilizing PuTTY. The CLI inputs were as follows.
-  --a. conf sys int
-  --b. edit port2
+  ..a. conf sys int
+  ..b. edit port2
   --c. set allowaccess ping http https ssh
   --d. set ip 10.128.0.1/24
   --e. end
