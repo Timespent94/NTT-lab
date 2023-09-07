@@ -1,6 +1,6 @@
 # NTT-lab project
 NTT-lab in divergence
-Built a *SMB (small/medium business) network, with a LAN, DMZ, and Guest network*.
+Built a *SMB (small/medium business) network, with a LAN, DMZ, and Guest network*.--
 A Windows domain environment.
 A IIS webserver.
 A Windows FTP server.
