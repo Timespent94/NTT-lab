@@ -104,5 +104,34 @@ STEPS:
       name = LAN-services-group
   b. DMZ services
       Create New > Service Group
-      name 
-  
+      name = DMZ-services-group
+      members = ALL_ICMP, FTP, RDP, SSH, Web access
+16. Configure firewall Rules 
+  a. LAN-to-WAN policy
+      Create New
+      name = LAN-to-WAN
+      incoming interface = LAN
+      outgoing interface = WAN
+      source = port2 address
+      destination = ALL
+      service =  ALL
+      NAT = enabled
+  b. DMZ-to-WAN
+      Create New
+      name = DMZ-to-WAN
+      incoming interface = DMZ
+      outgoing interface = WAN
+      source = port4 address
+      destination = ALL
+      service = ALL
+      NAT = enabled
+  c. LAN-to-DMZ
+      Create New
+      name = LAN-to-DMZ
+      incoming interface = LAN
+      outgoing interface = DMZ
+      source = port2 address
+      destination = port4 address
+      service = DMZ-services-group
+      NAT = disabled
+  d.
