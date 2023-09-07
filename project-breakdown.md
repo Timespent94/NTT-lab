@@ -1,7 +1,7 @@
 #H1 NTT-lab project breakdown
 STEPS:
 1. starting from zero.
---*starting with WAN-Cloud and the WAN-Switch already established and configured in GNS3.--
+---starting with WAN-Cloud and the WAN-Switch already established and configured in GNS3.--
    ---We added a FortiGate firewall, two switchs and a Windows 10 workstation to the Network.--
    ---We then provided connections for the network. 
 3. Set up a virtual LAN interface utilizing PuTTY. The CLI inputs were as follows.
