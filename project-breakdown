@@ -116,7 +116,7 @@ STEPS:
       destination = ALL
       service =  ALL
       NAT = enabled
-  b. DMZ-to-WAN
+  b. DMZ-to-WAN policy
       Create New
       name = DMZ-to-WAN
       incoming interface = DMZ
@@ -125,7 +125,7 @@ STEPS:
       destination = ALL
       service = ALL
       NAT = enabled
-  c. LAN-to-DMZ
+  c. LAN-to-DMZ policy
       Create New
       name = LAN-to-DMZ
       incoming interface = LAN
@@ -134,4 +134,23 @@ STEPS:
       destination = port4 address
       service = DMZ-services-group
       NAT = disabled
-  d.
+  d. DMZ-to-LAN policy
+      Create New
+      name = DMZ-to-LAN
+      incoming interface = DMZ
+      outgoing interface = LAN
+      source = port4 address
+      destination = port2 address
+      service = LAN-services-group
+      NAT = disabled
+  e. WAN-to-DMZ policy
+      Create New
+      name = WAN-to-DMZ
+      incoming interface = WAN
+      outgoing interface = DMZ
+      source = ALL
+      Destination = port4 address
+      service = DMZ-services-group
+      NAT = disabled
+17. Backup the firewall configuration
+
